@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gulshan Coffee Shop</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="site-header" aria-label="Main navigation">
+    <div class="container header-inner">
+      <a href="#home" class="brand" aria-label="Gulshan Coffee Home">
+        <!-- Simple logo -->
+        <svg width="38" height="38" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 12c0-4.5 3.5-8 9-8s9 3.5 9 8" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          <path d="M3 12h18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          <path d="M7 12v6a4 4 0 0 0 8 0v-6" fill="none" stroke="white" stroke-width="2" />
+        </svg>
+        <span class="brand-name">Gulshan Coffee</span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Site">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#visit">Visit</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="cta-mobile" id="mobileMenuBtn" aria-label="Open menu" title="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero section" aria-label="Hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <h1 class="display">Crafted Coffee in the Heart of Gulshan</h1>
+        <p class="lead">
+          At Gulshan Coffee, we brew small-batch coffee with passion. Slow-roasted beans,
+          warm spaces, and a friendly, neighborhood vibe.
+        </p>
+        <div class="hero-ctas">
+          <a href="#menu" class="btn btn-cta" aria-label="View Menu">View Menu</a>
+          <a href="#visit" class="btn btn-secondary" aria-label="Find Us">Visit Us</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Steam coffee cup">
+        <!-- Inline SVG coffee cup illustration -->
+        <svg viewBox="0 0 520 420" role="img" aria-label="Coffee cup illustration" width="100%" height="100%">
+          <defs>
+            <linearGradient id="grad" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0%" stop-color="#6D4C41"/>
+              <stop offset="100%" stop-color="#3E2723"/>
+            </linearGradient>
+          </defs>
+          <rect x="0" y="0" width="520" height="420" fill="url(#grad)" opacity="0.15"/>
+          <ellipse cx="270" cy="260" rx="170" ry="40" fill="rgba(0,0,0,0.15)"/>
+          <path d="M180 210c-30 10-60 40-60 70 0 60 120 40 150 40s80 0 120-20" stroke="#fff" stroke-width="6" fill="none" opacity="0.5"/>
+          <path d="M210 180h140a60 60 0 0 1 0 60H210z" fill="#fff" opacity="0.2"/>
+          <ellipse cx="170" cy="180" rx="20" ry="12" fill="#fff" opacity="0.6"/>
+          <rect x="110" y="260" width="160" height="90" rx="18" fill="#6D4C41" opacity="0.9"/>
+          <rect x="130" y="280" width="120" height="50" rx="14" fill="#fff" opacity="0.9"/>
+          <circle cx="420" cy="70" r="40" fill="#ffd27a"/>
+          <circle cx="410" cy="55" r="7" fill="#fff" opacity="0.7"/>
+          <circle cx="440" cy="60" r="4" fill="#fff" opacity="0.6"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section (KPI) -->
+  <section class="section stats" aria-label="Live stats">
+    <div class="container grid-3">
+      <div class="stat-card glass">
+        <div class="stat-number" data-target="5200" aria-live="polite">0</div>
+        <div class="stat-label">Cups poured this week</div>
+      </div>
+      <div class="stat-card glass">
+        <div class="stat-number" data-target="128" aria-live="polite">0</div>
+        <div class="stat-label">Fresh beans roasted daily</div>
+      </div>
+      <div class="stat-card glass">
+        <div class="stat-number" data-target="97" aria-live="polite">0</div>
+        <div class="stat-label">Deliveries this week</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section about" aria-label="About Gulshan Coffee">
+    <div class="container grid-2">
+      <div class="about-copy glass">
+        <h2>Our Story</h2>
+        <p>
+          Gulshan Coffee began as a small neighborhood roastery with a big dream: to connect people
+          through remarkable coffee. We source ethically grown beans, roast in small batches, and
+          craft beverages that celebrate diversity of flavor—every cup tells a story.
+        </p>
+        <p>
+          Our space is designed for lingering conversations, quiet study, and spontaneous meetings.
+          We brew with intention, keep the atmosphere warm, and serve with a smile.
+        </p>
+      </div>
+      <div class="about-art" aria-label="Coffee station">
+        <!-- Inline decorative SVG for about -->
+        <svg viewBox="0 0 520 360" width="100%" height="100%">
+          <defs>
+            <linearGradient id="bg" x1="0" x2="0" y1="0" y2="1">
+              <stop offset="0%" stop-color="#1f2937"/>
+              <stop offset="100%" stop-color="#374151"/>
+            </linearGradient>
+          </defs>
+          <rect width="520" height="360" fill="url(#bg)" opacity="0.9"/>
+          <g fill="#fff" fill-opacity="0.9">
+            <circle cx="90" cy="120" r="40"/>
+            <rect x="150" y="80" width="240" height="40" rx="8"/>
+            <rect x="150" y="140" width="240" height="40" rx="8"/>
+            <rect x="150" y="200" width="180" height="40" rx="8"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="section menu" aria-label="Menu">
+    <div class="container">
+      <h2 class="section-title">Our Menu</h2>
+      <p class="section-subtitle">Sipped with care. Served with a smile. Seasonal specialties and daily roasts.</p>
+
+      <div class="tabs" role="tablist" aria-label="Menu categories">
+        <button class="tab active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="tab" data-filter="coffee" role="tab" aria-selected="false">Coffee</button>
+        <button class="tab" data-filter="tea" role="tab" aria-selected="false">Tea</button>
+        <button class="tab" data-filter="pastry" role="tab" aria-selected="false">Pastries</button>
+      </div>
+
+      <div class="menu-grid" id="menuGrid">
+        <!-- Coffee -->
+        <article class="card" data-category="coffee">
+          <div class="card-head">
+            <h3>Espresso</h3>
+            <span class="tag">Single shot</span>
+          </div>
+          <p>Dark, intense, velvety. 25ml of pure focus.</p>
+          <div class="card-foot">
+            <span class="price">$3.00</span>
+          </div>
+        </article>
+
+        <article class="card" data-category="coffee">
+          <div class="card-head">
+            <h3>Flat White</h3>
+            <span class="tag">Milk velvet</span>
+          </div>
+          <p>Microfoam texture with balanced espresso.</p>
+          <div class="card-foot">
+            <span class="price">$4.50</span>
+          </div>
+        </article>
+
+        <article class="card" data-category="coffee">
+          <div class="card-head">
+            <h3>Latte Macchiato</h3>
+            <span class="tag">Layered elegance</span>
+          </div>
+          <p>Milk-forward with a bold espresso pull.</p>
+          <div class="card-foot">
+            <span class="price">$5.00</span>
+          </div>
+        </article>
+
+        <article class="card" data-category="coffee">
+          <div class="card-head">
+            <h3>Caramel Mocha</h3>
+            <span class="tag">Sweet harmony</span>
+          </div>
+          <p>Rich chocolate, caramel, and espresso, crowned with cream.</p>
+          <div class="card-foot">
+            <span class="price">$5.50</span>
+          </div>
+        </article>
+
+        <!-- Tea -->
+        <article class="card" data-category="tea">
+          <div class="card-head">
+            <h3>Matcha Latte</h3>
+            <span class="tag">Ceremonial grade</span>
+          </div>
+          <p>Stone-ground matcha whisked with velvet milk.</p>
+          <div class="card-foot">
+            <span class="price">$4.75</span>
+          </div>
+        </article>
+
+        <article class="card" data-category="tea">
+          <div class="card-head">
+            <h3>Chai Latte</h3>
+            <span class="tag">Spiced infusion</span>
+          </div>
+          <p>Black chai tea, cinnamon, cardamom, and creamy froth.</p>
+          <div class="card-foot">
+            <span class="price">$4.25</span>
+          </div>
+        </article>
+
+        <!-- Pastries -->
+        <article class="card" data-category="pastry">
+          <div class="card-head">
+            <h3>Almond Croissant</h3>
+            <span class="tag">Buttery layers</span>
+          </div>
+          <p>Flaky, almond-filled croissant with a crisp finish.</p>
+          <div class="card-foot">
+            <span class="price">$3.75</span>
+          </div>
+        </article>
+
+        <article class="card" data-category="pastry">
+          <div class="card-head">
+            <h3>Blueberry Muffin</h3>
+            <span class="tag">Seasonal berries</span>
+          </div>
+          <p>Moist crumb packed with blueberries and lemon zest.</p>
+          <div class="card-foot">
+            <span class="price">$3.50</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="section gallery" aria-label="Gallery">
+    <div class="container">
+      <h2 class="section-title">Gallery</h2>
+      <p class="section-subtitle">Moments from our cozy corner—coffee, pastries, and warm conversations.</p>
+      <div class="gallery-grid">
+        <!-- Decorative inline SVG cards to simulate gallery items (no external images) -->
+        <figure class="gallery-item glass" aria-label="Cup of coffee illustration">
+          <svg viewBox="0 0 320 240" width="100%" height="100%">
+            <defs>
+              <linearGradient id="gc" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#7c3a12"/>
+                <stop offset="100%" stop-color="#1f130f"/>
+              </linearGradient>
+            </defs>
+            <rect width="320" height="240" fill="url(#gc)" opacity="0.9"/>
+            <g fill="#fff" opacity="0.9">
+              <ellipse cx="160" cy="120" rx="90" ry="60"/>
+              <rect x="135" y="55" width="50" height="60" rx="8"/>
+            </g>
+          </svg>
+          <figcaption>Cup of joy</figcaption>
+        </figure>
+
+        <figure class="gallery-item glass" aria-label="Coffee bean illustration">
+          <svg viewBox="0 0 320 240" width="100%" height="100%">
+            <ellipse cx="160" cy="120" rx="120" ry="60" fill="#3b2a1f"/>
+            <ellipse cx="120" cy="120" rx="20" ry="8" fill="#d7a36d"/>
+            <ellipse cx="200" cy="120" rx="20" ry="8" fill="#d7a36d"/>
+          </svg>
+          <figcaption>Beans in roast</figcaption>
+        </figure>
+
+        <figure class="gallery-item glass" aria-label="Latte art illustration">
+          <svg viewBox="0 0 320 240" width="100%" height="100%">
+            <rect width="320" height="240" fill="#f6efe4"/>
+            <path d="M80 130c30-40 90-40 120-5" fill="none" stroke="#7b5a3a" stroke-width="16" stroke-linecap="round"/>
+            <path d="M150 140c30-10 70-10 110 0" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+          </svg>
+          <figcaption>Latte art moment</figcaption>
+        </figure>
+
+        <figure class="gallery-item glass" aria-label="Pastry close-up">
+          <svg viewBox="0 0 320 240" width="100%" height="100%">
+            <rect width="320" height="240" fill="#fff"/>
+            <circle cx="160" cy="120" r="70" fill="#f6c89f"/>
+            <circle cx="145" cy="110" r="10" fill="#7a4e2a"/>
+            <circle cx="180" cy="110" r="10" fill="#7a4e2a"/>
+            <path d="M150 150q10 20 20 0" stroke="#7a4e2a" stroke-width="6" fill="none" stroke-linecap="round"/>
+          </svg>
+          <figcaption>Weekend pastry showcase</figcaption>
+        </figure>
+
+        <figure class="gallery-item glass" aria-label="Cafe storefront">
+          <svg viewBox="0 0 320 240" width="100%" height="100%">
+            <rect width="320" height="240" fill="#2b2b2b"/>
+            <rect x="60" y="60" width="200" height="120" rx="14" fill="#f9d29d"/>
+            <rect x="90" y="100" width="40" height="40" rx="6" fill="#fff"/>
+            <rect x="180" y="100" width="40" height="40" rx="6" fill="#fff"/>
+          </svg>
+          <figcaption>Storefront vibes</figcaption>
+        </figure>
+
+        <figure class="gallery-item glass" aria-label="Cup and steam illustration">
+          <svg viewBox="0 0 320 240" width="100%" height="100%">
+            <rect width="320" height="240" fill="#1a1a1a"/>
+            <ellipse cx="160" cy="140" rx="100" ry="40" fill="#fff" opacity="0.4"/>
+            <path d="M110 110c20-20 60-20 90 0" stroke="#fff" stroke-width="6" fill="none"/>
+          </svg>
+          <figcaption>Steam moment</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visit Section -->
+  <section id="visit" class="section visit" aria-label="Visit Gulshan Coffee">
+    <div class="container grid-2">
+      <div class="visit-copy glass">
+        <h2>Visit Gulshan Coffee</h2>
+        <p>We’re open daily from 7:00 AM to 9:00 PM. Find us in the heart of Gulshan, Block A, Street 12. A cozy corner for coffee lovers, students, freelancers, and neighbors.</p>
+        <ul class="hours">
+          <li>Mon–Thu: 7:00 AM – 9:00 PM</li>
+          <li>Fri–Sat: 7:00 AM – 10:00 PM</li>
+          <li>Sun: 8:00 AM – 8:00 PM</li>
+        </ul>
+      </div>
+      <div class="visit-map glass" aria-label="Map placeholder">
+        <!-- Simple map placeholder as inline SVG -->
+        <svg viewBox="0 0 520 340" width="100%" height="100%">
+          <rect width="520" height="340" rx="18" fill="#e5e7eb"/>
+          <path d="M60 280c60-40 140-40 200-20s140 20 180-20V60H60z" fill="#9ca3af" opacity="0.25"/>
+          <circle cx="100" cy="320" r="10" fill="#e11d48"/>
+          <text x="120" y="60" fill="#374151" font-family="Arial" font-size="22">Gulshan Coffee • Storefront</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Newsletter Section -->
+  <section id="contact" class="section contact" aria-label="Contact Gulshan Coffee">
+    <div class="container grid-2">
+      <div class="contact-info glass">
+        <h2>Get in touch</h2>
+        <p>Have a question, want to collaborate, or just want to say hello? We’d love to hear from you.</p>
+        <p><strong>Email:</strong> hello@gulshancoffee.example</p>
+        <p><strong>Phone:</strong> (01) 234-5678</p>
+      </div>
+      <form class="contact-form glass" id="newsletter" autocomplete="on" novalidate>
+        <h2>Join our newsletter</h2>
+        <p>Get early access to seasonal drinks and events.</p>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required placeholder="Your name" />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="you@example.com" />
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="Tell us something you'd like to see?" ></textarea>
+        <button type="submit" class="btn btn-cta" aria-label="Subscribe">Subscribe</button>
+        <p class="form-note" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer" aria-label="Footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Gulshan Coffee. All rights reserved.</p>
+      <p>Designed with care in Gulshan, Dhaka.</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
